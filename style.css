@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border:dashed; */
+    border:dashed;
     }
 
 body {
@@ -78,13 +78,15 @@ h2{
 .detail-container{
   /* font-size: em; */
   /* controls the width of the overall container */
-  width:50%;
+  width:10%;
+  margin-left: 7%;
   /* what enables the use of css grid */
   display:grid;
   /* position: relative; */
   /* padding-left: 22%; */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  
 }
 /* what the svg files will be styled on page load */
 
