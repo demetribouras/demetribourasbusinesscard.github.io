@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border:dashed; */
+    }
+
+body {
+  background-image: url("assets/background.png");
+}
+/* the main container */
+
+.card{
+ width: 70%;;
+ height: 30%;;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+.front-card{
+
+  background-image: url('assets/demfrontofcard.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+
+  
+}
+ 
+.back-card {
+  /*background-image: url('assets/front-of-card-with-bigger-logo.svg');*/
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+h1{
+  /* to left align text */
+  font-size: 30pt;
+  margin-top: 5%;
+  /*margin-left:0%;*/
+  text-align: center;
+  color:white;
+
+  font-family: 'Abril Fatface', cursive;
+}
+
+.back-text {
+  margin-top: 2%;
+  margin-left:5%;
+  margin-bottom: 10%;
+}
+
+
+h3{
+  margin-left: 18%;
+  font-size: 14pt;
+  margin-bottom:0%;
+  font-family: 'Quicksand', sans-serif;
+  color:white
+}
+
+h2{
+  margin-left: 18%;
+  font-size: 14pt;
+  font-family: 'Quicksand', sans-serif;
+  color:white
+}
+
+/*h5{
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+}*/
+
+
+.detail-container{
+  /* font-size: em; */
+  /* controls the width of the overall container */
+  width:50%;
+  /* what enables the use of css grid */
+  display:grid;
+  /* position: relative; */
+  /* padding-left: 22%; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* what the svg files will be styled on page load */
+
+svg{
+  fill:rgb(255, 255, 255);
+}
+
+
+svg:hover{
+  fill:rgb(117, 168, 189);
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+svg:hover{
+  fill:rgb(117, 168, 189);
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .card{
+  width:40%;
+  /* width:400px; */
+/* height:750px; */
+}
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: blueviolet;
+  }
+  .card{
+  width:30%;
+  /* width:400px; */
+  /* height:750px; */
+
+}
+}
